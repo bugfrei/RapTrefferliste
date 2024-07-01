@@ -1,0 +1,18 @@
+managed implementation in class zbp_i_sls_hitab unique;
+strict ( 2 );
+
+define behavior for ZI_SLS_HITAB alias HitabBD
+persistent table /su01/sls_hi_tab
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly ) Zobject;
+  field ( readonly ) Zobjectkey;
+  field ( readonly ) Zcounter;
+
+}

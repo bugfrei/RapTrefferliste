@@ -1,0 +1,170 @@
+@Metadata.layer: #PARTNER
+
+@UI: { 
+  headerInfo: { 
+    typeName: 'Trefferliste',
+    typeNamePlural: 'Trefferliste',
+    title: { 
+      type: #STANDARD,
+      label: 'Trefferliste',
+      value: 'Zobject'
+    }
+  }
+}
+
+annotate entity ZC_SLS_HITAB
+  with 
+{
+  @UI.facet: [ {
+    id: 'Trefferliste',
+    purpose: #STANDARD,
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'Trefferliste',
+    position: 10
+   } ]
+
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'Zobject'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: '',
+    importance: #MEDIUM
+   } ]
+Zobject;
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'Zobjectkey'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: 'Zobjectkey',
+    importance: #MEDIUM
+   } ]
+Zobjectkey;
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'Zcounter'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: 'Zcounter',
+    importance: #MEDIUM
+   } ]
+Zcounter;
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'Zlstnam'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: 'Zlstnam',
+    importance: #MEDIUM
+   } ]
+Zlstnam;
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'Zprozent'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: 'Zprozent',
+    importance: #MEDIUM
+   } ]
+Zprozent;
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'Ztext'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: 'Ztext',
+    importance: #MEDIUM
+   } ]
+Ztext;
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'Zdetail1'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: 'Zdetail1',
+    importance: #MEDIUM
+   } ]
+Zdetail1;
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'Zdetail2'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: 'Zdetail2',
+    importance: #MEDIUM
+   } ]
+Zdetail2;
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'Zsonst'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: 'Zsonst',
+    importance: #MEDIUM
+   } ]
+Zsonst;
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'Zland'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: 'Zland',
+    importance: #MEDIUM
+   } ]
+Zland;
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'Zort'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: 'Zort',
+    importance: #MEDIUM
+   } ]
+Zort;
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'Zstrasse'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: 'Zstrasse',
+    importance: #MEDIUM
+   } ]
+Zstrasse;
+  @UI.lineItem: [ {
+            position: 10,
+    importance: #MEDIUM,
+    label: 'LocalLastChangedAt'
+  } ]
+  @UI.identification: [{
+        position: 10,
+    label: 'LocalLastChangedAt',
+    importance: #MEDIUM
+   } ]
+LocalLastChangedAt;
+  
+}
