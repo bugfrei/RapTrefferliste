@@ -7,7 +7,7 @@
     title: { 
       type: #STANDARD,
       label: 'Trefferliste',
-      value: 'ZText'
+      value: 'Zobjectkey'
     }
   }
 }
@@ -24,17 +24,17 @@ annotate entity ZC_SLS_HITAB
    } ]
 
   @UI.lineItem: [ {
-            position: 200,
+            position: 10,
     importance: #HIGH,
-    label: 'Zobject'
+    label: 'Objekt'
   }, { 
     type: #FOR_ACTION,
     dataAction: 'keinTreffer',
     label: 'Kein Treffer'
   } ]
   @UI.identification: [{
-        position: 200,
-    label: '',
+        position: 10,
+    label: 'Objekt',
     importance: #HIGH
    }, { 
     type: #FOR_ACTION,
@@ -46,11 +46,11 @@ Zobject;
   @UI.lineItem: [ {
             position: 20,
     importance: #HIGH,
-    label: 'Zobjectkey'
+    label: 'Objektschlüssel'
   } ]
   @UI.identification: [{
         position: 20,
-    label: 'Zobjectkey',
+    label: 'Objektschlüssel',
     importance: #MEDIUM
    } ]
   @UI.selectionField: [{ position: 20 }]
@@ -58,22 +58,22 @@ Zobjectkey;
   @UI.lineItem: [ {
             position: 90,
     importance: #MEDIUM,
-    label: 'Zcounter'
+    label: 'Zähler'
   } ]
   @UI.identification: [{
         position: 90,
-    label: 'Zcounter',
+    label: 'Zähler',
     importance: #MEDIUM
    } ]
 Zcounter;
   @UI.lineItem: [ {
             position: 80,
     importance: #MEDIUM,
-    label: 'Zlstnam'
+    label: 'Name der Sanktionsliste'
   } ]
   @UI.identification: [{
         position: 80,
-    label: 'Zlstnam',
+    label: 'Name der Sanktionsliste',
     importance: #MEDIUM
    } ]
 
@@ -81,67 +81,67 @@ Zlstnam;
   @UI.lineItem: [ {
             position: 70,
     importance: #MEDIUM,
-    label: 'Zprozent'
+    label: 'Übereinstimmungsprozentsatz'
   } ]
   @UI.identification: [{
         position: 70,
-    label: 'Zprozent',
+    label: 'Übereinstimmungsprozentsatz',
     importance: #MEDIUM
    } ]
 Zprozent;
   @UI.lineItem: [ {
             position: 30,
     importance: #MEDIUM,
-    label: 'Ztext'
+    label: 'Name Trefferergebnis'
   } ]
   @UI.identification: [{
         position: 30,
-    label: 'Ztext',
+    label: 'Name Trefferergebnis',
     importance: #MEDIUM
    } ]
      @UI.selectionField: [{ position: 10 }]
 Ztext;
   @UI.lineItem: [ {
-            position: 30,
+            position: 300,
     importance: #MEDIUM,
-    label: 'Zdetail1'
+    label: 'Detailinformation durchsuchter Text 1'
   } ]
   @UI.identification: [{
-        position: 30,
-    label: 'Zdetail1',
+        position: 300,
+    label: 'Detailinformation durchsuchter Text 1',
     importance: #MEDIUM
    } ]
 Zdetail1;
   @UI.lineItem: [ {
             position: 200,
     importance: #MEDIUM,
-    label: 'Zdetail2'
+    label: 'Detailinformation durchsuchter Text 2'
   } ]
   @UI.identification: [{
         position: 200,
-    label: 'Zdetail2',
+    label: 'Detailinformation durchsuchter Text 2',
     importance: #MEDIUM
    } ]
 Zdetail2;
   @UI.lineItem: [ {
             position: 110,
     importance: #MEDIUM,
-    label: 'Zsonst'
+    label: 'Text Sonstiges'
   } ]
   @UI.identification: [{
         position: 110,
-    label: 'Zsonst',
+    label: 'Text Sonstiges',
     importance: #MEDIUM
    } ]
 Zsonst;
   @UI.lineItem: [ {
             position: 50,
     importance: #MEDIUM,
-    label: 'Zland'
+    label: 'Land'
   } ]
   @UI.identification: [{
         position: 50,
-    label: 'Zland',
+    label: 'Land',
     importance: #MEDIUM
    } ]
      @UI.selectionField: [{ position: 40 }]
@@ -149,11 +149,11 @@ Zland;
   @UI.lineItem: [ {
             position: 50,
     importance: #MEDIUM,
-    label: 'Zort'
+    label: 'Ort'
   } ]
   @UI.identification: [{
         position: 50,
-    label: 'Zort',
+    label: 'Ort',
     importance: #MEDIUM
    } ]
    
@@ -162,11 +162,11 @@ Zort;
   @UI.lineItem: [ {
             position: 40,
     importance: #MEDIUM,
-    label: 'Zstrasse'
+    label: 'Strasse'
   } ]
   @UI.identification: [{
         position: 40,
-    label: 'Zstrasse',
+    label: 'Strasse',
     importance: #MEDIUM
    } ]
    
