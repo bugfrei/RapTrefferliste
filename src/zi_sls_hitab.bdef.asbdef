@@ -15,4 +15,21 @@ authorization master ( instance )
   field ( readonly ) Zobjectkey;
   field ( readonly ) Zcounter;
 
+  action (features : instance ) keinTreffer result [1] $self;
+
+  mapping for /su01/sls_hi_tab {
+    Zobject = zobject;
+    Zobjectkey = zobjectkey;
+    Zcounter = zcounter;
+    Zlstnam = zlstnam;
+    Zprozent = zprozent;
+    Ztext = ztext;
+    Zdetail1 = zdetail1;
+    Zdetail2 = zdetail2;
+    Zsonst = zsonst;
+    Zland = zland;
+    Zort = zort;
+    Zstrasse = zstrasse;
+  }
+
 }

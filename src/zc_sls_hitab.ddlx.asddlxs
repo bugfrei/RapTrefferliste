@@ -27,12 +27,20 @@ annotate entity ZC_SLS_HITAB
             position: 10,
     importance: #MEDIUM,
     label: 'Zobject'
+  }, { 
+    type: #FOR_ACTION,
+    dataAction: 'keinTreffer',
+    label: 'Kein Treffer'
   } ]
   @UI.identification: [{
         position: 10,
     label: '',
     importance: #MEDIUM
-   } ]
+   }, { 
+    type: #FOR_ACTION,
+    dataAction: 'keinTreffer',
+    label: 'Kein Treffer'
+  } ]
 Zobject;
   @UI.lineItem: [ {
             position: 10,
@@ -165,6 +173,6 @@ Zstrasse;
     label: 'LocalLastChangedAt',
     importance: #MEDIUM
    } ]
-LocalLastChangedAt;
+locallastchangedat;
   
 }
