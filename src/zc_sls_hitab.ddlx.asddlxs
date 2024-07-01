@@ -7,7 +7,7 @@
     title: { 
       type: #STANDARD,
       label: 'Trefferliste',
-      value: 'Zobject'
+      value: 'ZText'
     }
   }
 }
@@ -24,8 +24,8 @@ annotate entity ZC_SLS_HITAB
    } ]
 
   @UI.lineItem: [ {
-            position: 10,
-    importance: #MEDIUM,
+            position: 200,
+    importance: #HIGH,
     label: 'Zobject'
   }, { 
     type: #FOR_ACTION,
@@ -33,146 +33,155 @@ annotate entity ZC_SLS_HITAB
     label: 'Kein Treffer'
   } ]
   @UI.identification: [{
-        position: 10,
+        position: 200,
     label: '',
-    importance: #MEDIUM
+    importance: #HIGH
    }, { 
     type: #FOR_ACTION,
     dataAction: 'keinTreffer',
     label: 'Kein Treffer'
   } ]
+  @UI.selectionField: [{ position: 10 }]
 Zobject;
   @UI.lineItem: [ {
-            position: 10,
-    importance: #MEDIUM,
+            position: 20,
+    importance: #HIGH,
     label: 'Zobjectkey'
   } ]
   @UI.identification: [{
-        position: 10,
+        position: 20,
     label: 'Zobjectkey',
     importance: #MEDIUM
    } ]
+  @UI.selectionField: [{ position: 20 }]
 Zobjectkey;
   @UI.lineItem: [ {
-            position: 10,
+            position: 90,
     importance: #MEDIUM,
     label: 'Zcounter'
   } ]
   @UI.identification: [{
-        position: 10,
+        position: 90,
     label: 'Zcounter',
     importance: #MEDIUM
    } ]
 Zcounter;
   @UI.lineItem: [ {
-            position: 10,
+            position: 80,
     importance: #MEDIUM,
     label: 'Zlstnam'
   } ]
   @UI.identification: [{
-        position: 10,
+        position: 80,
     label: 'Zlstnam',
     importance: #MEDIUM
    } ]
+
 Zlstnam;
   @UI.lineItem: [ {
-            position: 10,
+            position: 70,
     importance: #MEDIUM,
     label: 'Zprozent'
   } ]
   @UI.identification: [{
-        position: 10,
+        position: 70,
     label: 'Zprozent',
     importance: #MEDIUM
    } ]
 Zprozent;
   @UI.lineItem: [ {
-            position: 10,
+            position: 30,
     importance: #MEDIUM,
     label: 'Ztext'
   } ]
   @UI.identification: [{
-        position: 10,
+        position: 30,
     label: 'Ztext',
     importance: #MEDIUM
    } ]
+     @UI.selectionField: [{ position: 10 }]
 Ztext;
   @UI.lineItem: [ {
-            position: 10,
+            position: 30,
     importance: #MEDIUM,
     label: 'Zdetail1'
   } ]
   @UI.identification: [{
-        position: 10,
+        position: 30,
     label: 'Zdetail1',
     importance: #MEDIUM
    } ]
 Zdetail1;
   @UI.lineItem: [ {
-            position: 10,
+            position: 200,
     importance: #MEDIUM,
     label: 'Zdetail2'
   } ]
   @UI.identification: [{
-        position: 10,
+        position: 200,
     label: 'Zdetail2',
     importance: #MEDIUM
    } ]
 Zdetail2;
   @UI.lineItem: [ {
-            position: 10,
+            position: 110,
     importance: #MEDIUM,
     label: 'Zsonst'
   } ]
   @UI.identification: [{
-        position: 10,
+        position: 110,
     label: 'Zsonst',
     importance: #MEDIUM
    } ]
 Zsonst;
   @UI.lineItem: [ {
-            position: 10,
+            position: 50,
     importance: #MEDIUM,
     label: 'Zland'
   } ]
   @UI.identification: [{
-        position: 10,
+        position: 50,
     label: 'Zland',
     importance: #MEDIUM
    } ]
+     @UI.selectionField: [{ position: 40 }]
 Zland;
   @UI.lineItem: [ {
-            position: 10,
+            position: 50,
     importance: #MEDIUM,
     label: 'Zort'
   } ]
   @UI.identification: [{
-        position: 10,
+        position: 50,
     label: 'Zort',
     importance: #MEDIUM
    } ]
+   
+     @UI.selectionField: [{ position: 50 }]
 Zort;
   @UI.lineItem: [ {
-            position: 10,
+            position: 40,
     importance: #MEDIUM,
     label: 'Zstrasse'
   } ]
   @UI.identification: [{
-        position: 10,
+        position: 40,
     label: 'Zstrasse',
     importance: #MEDIUM
    } ]
+   
+     @UI.selectionField: [{ position: 60 }]
 Zstrasse;
-  @UI.lineItem: [ {
-            position: 10,
-    importance: #MEDIUM,
-    label: 'LocalLastChangedAt'
-  } ]
-  @UI.identification: [{
-        position: 10,
-    label: 'LocalLastChangedAt',
-    importance: #MEDIUM
-   } ]
-locallastchangedat;
-  
+//  @UI.lineItem: [ {
+//            position: 10,
+//    importance: #MEDIUM,
+//    label: 'LocalLastChangedAt'
+//  } ]
+//  @UI.identification: [{
+//        position: 10,
+//    label: 'LocalLastChangedAt',
+//    importance: #MEDIUM
+//   } ]
+//locallastchangedat;
+//  
 }

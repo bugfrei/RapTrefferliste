@@ -26,7 +26,8 @@ CLASS lhc_HitabBD IMPLEMENTATION.
         DELETE
         FROM VALUE #( FOR key IN keys ( %tky = key-%tky ) )
         FAILED   failed
-          REPORTED reported.
+        MAPPED mapped
+        REPORTED reported.
 
 *    MODIFY ENTITIES OF zi_sls_hitab IN LOCAL MODE
 *    ENTITY HitabBD
@@ -46,6 +47,11 @@ CLASS lhc_HitabBD IMPLEMENTATION.
 *    ).
 
 
+    LOOP AT keys INTO DATA(ls_key).
+      UPDATE /su01/sls_da_tab
+      SET Ztreffer = 0
+      WHERE zobject = ls_key-Zobject and Zobjectkey = ls_key-Zobjectkey.
+    ENDLOOP.
   ENDMETHOD.
 
 ENDCLASS.

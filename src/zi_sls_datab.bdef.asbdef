@@ -1,0 +1,49 @@
+managed implementation in class zbp_i_sls_datab unique;
+strict ( 2 );
+
+define behavior for ZI_SLS_DATAB alias DatabBD
+persistent table /su01/sls_da_tab
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly ) Zobject;
+  field ( readonly ) Zobjectkey;
+
+  mapping for /su01/sls_da_tab {
+   Zobject = zobject;
+   Zobjectkey = zobjectkey;
+   Zname1 = zname_1;
+   Zname2 = zname_2;
+   Zname3 = zname_3;
+   Zname4 = zname_4;
+   Zname5 = zname_5;
+   Zstreet = zstreet;
+   ZpostCode = zpost_code;
+   Zcity = zcity;
+   Zcountry = zcountry;
+   Zbukrs = zbukrs;
+   ZCreUser = z_cre_user;
+   ZCreDate = z_cre_date;
+   ZCreTime = z_cre_time;
+   ZChgUserSap = z_chg_user_sap;
+   ZChgDateSap = z_chg_date_sap;
+   ZChgTimeSap = z_chg_time_sap;
+   ZChgDateExt = z_chg_date_ext;
+   ZChgLdatExt = z_chg_ldat_ext;
+   Zfund2 = zfund_2;
+   Zfund1 = zfund_1;
+   Zfund3 = zfund_3;
+   Zfund4 = zfund_4;
+   Ztreffer = ztreffer;
+   CreatedBy = created_by;
+   CreatedAt = created_at;
+   LocalLastChangedBy = local_last_changed_by;
+   LocalLastChangedAt = local_last_changed_at;
+   LastChangedAt = last_changed_at;
+  }
+}
